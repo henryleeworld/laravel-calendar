@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Venue;
+use App\Models\Venue;
 use Carbon\Carbon;
 
 class SystemCalendarController extends Controller
 {
     public $sources = [
         [
-            'model'      => '\\App\\Event',
+            'model'      => '\\App\\Models\\Event',
             'date_field' => 'start_time',
             'field'      => 'name',
             'prefix'     => 'Event',
@@ -18,7 +18,7 @@ class SystemCalendarController extends Controller
             'route'      => 'admin.events.edit',
         ],
         [
-            'model'      => '\\App\\Meeting',
+            'model'      => '\\App\\Models\\Meeting',
             'date_field' => 'start_time',
             'field'      => 'attendees',
             'prefix'     => 'Meeting with',

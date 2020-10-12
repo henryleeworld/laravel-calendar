@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Role extends Model
+class Venue extends Model
 {
     use SoftDeletes;
 
-    public $table = 'roles';
+    public $table = 'venues';
 
     protected $dates = [
         'created_at',
@@ -18,19 +18,15 @@ class Role extends Model
     ];
 
     protected $fillable = [
-        'title',
+        'name',
+        'address',
         'created_at',
         'updated_at',
         'deleted_at',
     ];
 
-    public function users()
+    public function events()
     {
-        return $this->belongsToMany(User::class);
-    }
-
-    public function permissions()
-    {
-        return $this->belongsToMany(Permission::class);
+        return $this->hasMany(Event::class, 'venue_id', 'id');
     }
 }

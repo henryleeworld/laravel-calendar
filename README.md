@@ -1,6 +1,6 @@
-# Laravel 7 活動與會議
+# Laravel 8 活動與會議
 
-可以建立多種日曆以追蹤多種活動。舉例來說，您可以建立「足球」日曆，以便追蹤接下來的練習和比賽時間。Laravel 7 活動與會議主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
+可以建立多種日曆以追蹤多種活動。舉例來說，您可以建立「足球」日曆，以便追蹤接下來的練習和比賽時間。Laravel 8 活動與會議主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -26,5 +26,5 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/tEGoas6.png)
+![](https://i.imgur.com/KmIvDmX.png)
 > 日曆能隨時隨地記下活動通知

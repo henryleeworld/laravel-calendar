@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Event;
+use App\Models\Event;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyEventRequest;
 use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
-use App\Venue;
+use App\Models\Venue;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
