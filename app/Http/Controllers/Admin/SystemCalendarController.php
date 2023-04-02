@@ -21,8 +21,8 @@ class SystemCalendarController extends Controller
             'model'      => '\\App\\Models\\Meeting',
             'date_field' => 'start_time',
             'field'      => 'attendees',
-            'prefix'     => 'Meeting with',
-            'suffix'     => '',
+            'prefix'     => '和',
+            'suffix'     => '開會',
             'route'      => 'admin.meetings.edit',
         ],
     ];

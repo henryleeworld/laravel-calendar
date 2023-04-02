@@ -42,3 +42,12 @@
     </div>
 </div>
 @endsection
+@section('scripts')
+<script>
+$(function () {
+    $("#start_time").datetimepicker({
+        locale: moment.locale('zh-tw'),
+    });
+});
+</script>
+@endsection
