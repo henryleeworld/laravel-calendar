@@ -9,14 +9,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('meetings', function (Blueprint $table) {
-            $table->increments('id');
-
+            $table->id();
             $table->string('attendees')->nullable();
-
             $table->datetime('start_time')->nullable();
-
             $table->timestamps();
-
             $table->softDeletes();
         });
     }

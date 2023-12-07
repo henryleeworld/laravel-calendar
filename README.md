@@ -1,4 +1,4 @@
-# Laravel 9 活動與會議
+# Laravel 10 活動與會議
 
 可以建立多種日曆以追蹤多種活動。舉例來說，您可以建立「足球」日曆，以便追蹤接下來的練習和比賽時間。
 
@@ -20,11 +20,19 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以登入經由 `/login` 來進行登入，預社的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
+- 你可以登入經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/hO13T85.png)
+![](https://i.imgur.com/PCwswFN.png)
 > 日曆能隨時隨地記下活動通知

@@ -9,9 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('events', function (Blueprint $table) {
-            $table->unsignedInteger('venue_id')->nullable();
-
-            $table->foreign('venue_id', 'venue_fk_598776')->references('id')->on('venues');
+            $table->foreignId('venue_id')->nullable()->constrained();
         });
     }
 };
